@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+ 	<meta charset="utf-8">
+	<title>Time Traveler</title>
+
+	<style type="text/css">
+        body {
+            background-color: rgba(24, 24, 24, .7);
+            color: #fff;
+            -webkit-app-region: drag;
+            -webkit-user-select: none;
+        }
+
+		dt, dd{
+			padding: 10px;
+		}
+		dt {
+			clear: left;
+	        float: left;
+		}
+		input{
+			margin:auto 5px;
+            -webkit-app-region: no-drag;
+		}
+
+	</style>
+
+	<script src="clipboard.min.js"></script>
+	<script src="timezoneDefine.js"></script>
+
+</head>
+
+<body>
+
+    <h1>Time Traveler</h1>
+
+
+	<dl>
+		<!-- 生成されるDOMの例
+		<dt>JST</dt>
+		<dd>
+			<input type="datetime-local" step="1" name="jst" data-offset="+09:00">
+			<input type="button" class="copyTime" value="Copy to clipboard">
+		</dd>
+		-->
+	</dl>
+
+	<input id="ResetBtn" type="button" value="Reset">　　　　　push Copy, then copy to clipboard.
+
+</body>
+
+
+
+<script src="pop.js"></script>
+
+</html>
